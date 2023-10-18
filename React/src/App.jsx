@@ -35,7 +35,7 @@ const pokemonList = [
 function App() {
 
   const [pokemonIndex, setPokemonIndex] = useState(0)
-
+  
 
 
 
@@ -63,7 +63,9 @@ function App() {
 
     />
 
-  </>);
+  </>
+
+  );
 
 }
 
