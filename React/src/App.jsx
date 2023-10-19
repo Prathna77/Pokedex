@@ -2,6 +2,7 @@ import { useState } from 'react'
 import './App.css'
 import PokemonCard from '../Pokemon/component/PokemonCard'
 import NavBar from '../Pokemon/component/NavBar'
+import { useEffect } from "react";
 
 
 const pokemonList = [
@@ -29,16 +30,20 @@ const pokemonList = [
 
   {
     name: "Mew",
+    imgSrc:
+      "https://quizizz.com/media/resource/gs/quizizz-media/quizzes/8cd9ff69-beb7-42f0-b946-3d05f8929c08"
   },
 ];
 
 function App() {
 
+  useEffect(() => {
+
+    alert("Hello, Pokemon Trainer! :)");
+  }, []);
+
   const [pokemonIndex, setPokemonIndex] = useState(0)
   
-
-
-
   /*     count === 0 ? ne pas m'afficher le bouton precedent : afficher le bouton suivant  
          count != 0 ? afficher le bouton precedent : ne pas afficher le bouton suivant 
          count > 0  ? <button onClick={decrementer}>precedent</button> : null 
